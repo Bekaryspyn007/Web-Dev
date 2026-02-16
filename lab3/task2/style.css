@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Центрирование контейнера по центру экрана */
+body {
+    background-color: #eeeeee; /* Сплошной серый фон */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #2e7d32; /* Сплошной зеленый цвет */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    /* Убрали margin: 2rem auto, так как центрирует flexbox в body */
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.todo-form {
+    padding: 1.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.todo-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.input-group {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+}
+
+.input-group button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd; /* Твоя оригинальная стилизация списка */
+}
+
+.todo-left {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.todo-text.done {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.delete-btn {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
